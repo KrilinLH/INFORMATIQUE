@@ -1,5 +1,5 @@
 # === Configuration de la VM ===
-$VMName      = "Windows10-Dev"
+$VMName      = "Windows-Server-2025"
 $VMPath      = "C:\VMs\$VMName"
 $DiskSizeGB  = 100
 $RAM         = 4096
