@@ -55,4 +55,4 @@ $VMXContent | Set-Content -Path $VMXPath -Encoding ASCII
 # === Démarrage de la VM ===
 & "$VMrunPath" start "$VMXPath"
 
-Write-Host "✅ VM '$VMName' créée et démarrée avec succès."
+Write-Host "✅ VM '$VMName' creee et demarree avec succes."
