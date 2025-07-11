@@ -5,6 +5,7 @@ $DiskSizeGB  = 100
 $RAM         = 4096
 $CPU         = 2
 $ISOPath     = "C:\ISOs\WS-SERVER-2025.iso"
+$AutoInstallISO = "C:\ISOs\autounattend.iso"
 $GuestOS     = "windows2022srv-64"
 
 # === Chemins vers les outils VMware ===
@@ -39,6 +40,10 @@ ide1:0.present = "TRUE"
 ide1:0.deviceType = "cdrom-image"
 ide1:0.fileName = "$ISOPath"
 
+ide1:1.present = "TRUE"
+ide1:1.deviceType = "cdrom-image"
+ide1:1.fileName = "$AutoInstallISO"
+
 ethernet0.present = "TRUE"
 ethernet0.connectionType = "nat"
 ethernet0.virtualDev = "e1000"
@@ -55,4 +60,4 @@ $VMXContent | Set-Content -Path $VMXPath -Encoding ASCII
 # === Démarrage de la VM ===
 & "$VMrunPath" start "$VMXPath"
 
-Write-Host "✅ VM '$VMName' creee et demarree avec succes."
+Write-Host "✅ VM '$VMName' créée et démarrée avec succès avec ISO d’auto-installation monté."
