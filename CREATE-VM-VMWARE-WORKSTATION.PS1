@@ -56,3 +56,5 @@ $VMXContent | Set-Content -Path $VMXPath -Encoding ASCII
 & "$VMrunPath" start "$VMXPath"
 
 Write-Host "✅ VM '$VMName' creee et demarree avec succes."
+
+test
