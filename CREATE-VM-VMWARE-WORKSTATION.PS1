@@ -5,7 +5,7 @@ $DiskSizeGB  = 100
 $RAM         = 4096
 $CPU         = 2
 $ISOPath     = "C:\ISOs\Win10.iso"
-$GuestOS     = "windows10-64"
+$GuestOS     = "WS-SERVER-2025.iso"
 
 # === Chemins vers les outils VMware ===
 $VMrunPath   = "C:\Program Files (x86)\VMware\VMware Workstation\vmrun.exe"
