@@ -5,7 +5,7 @@ $DiskSizeGB  = 100
 $RAM         = 4096
 $CPU         = 2
 $ISOPath     = "C:\ISOs\WS-SERVER-2025.iso"
-$GuestOS     = "Windows Server 2025"
+$GuestOS     = "windows2022srv-64"
 
 # === Chemins vers les outils VMware ===
 $VMrunPath   = "C:\Program Files (x86)\VMware\VMware Workstation\vmrun.exe"
